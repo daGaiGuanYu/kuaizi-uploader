@@ -1,0 +1,25 @@
+{
+  "name": "kuaizi-uploader",
+  "version": "1.0.0",
+  "description": "保存http请求里的文件到硬盘里",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daGaiGuanYu/kuaizi-uploader.git"
+  },
+  "keywords": [
+    "kuaizi",
+    "筷子",
+    "upload",
+    "file"
+  ],
+  "author": "gy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daGaiGuanYu/kuaizi-uploader/issues"
+  },
+  "homepage": "https://github.com/daGaiGuanYu/kuaizi-uploader#readme"
+}
