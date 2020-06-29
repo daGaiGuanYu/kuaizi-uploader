@@ -7,9 +7,12 @@
   <script>
   function handleChange(e){
     const file = e.target.files[0]
-    axios.post('/upload', file, {
+    const nameArr = file.name.split('.')
+    const suffix = nameArr[nameArr.length-1]
+    axios.post('/upload?suffix=' + suffix, file, {
       'Content-Type': 'application/octet-stream'
     }).then( res => {
+      res = res.data
       if(res.code == 0)
         console.log('success')
       else
