@@ -14,7 +14,7 @@ HandleRequest.get('/static', ctx => {
 })
 
 // 处理请求：上传文件
-const uploadedPosition = Path.join(__dirname, './uploaded') // 存储上传文件的位置
+const uploadedPosition = Path.join(__dirname, './uploaded') // 存储被上传文件的位置（绝对路径）
 const writer = new UploadedFileWriter(uploadedPosition) // 实例化 kuaizi-uploader（禁止在 handler 里实例化）
 HandleRequest.post('/upload', async ctx => {
   const suffix = ctx.getQuery().suffix // 需要以某种方式把文件的后缀名传过来
@@ -23,4 +23,6 @@ HandleRequest.post('/upload', async ctx => {
 
   const filename = new Date().getTime() + '.' + suffix // 生产环境请使用更严谨的文件命名方式
   await writer.write(ctx.req, filename)
+  
+  // return '一般会把文件的下载链接返回给前端'
 })
