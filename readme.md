@@ -1,6 +1,6 @@
 # kuaizi-session
 [node](https://nodejs.org/en/) web 后端，把前端上传的文件存到硬盘里  
-跟[筷子](https://github.com/daGaiGuanYu/kuaizi)没有依赖关系，只是理念一致  
+跟[筷子](https://github.com/daGaiGuanYu/kuaizi)没有依赖关系，只是理念一致~
 
 # 使用
 ## 安装
